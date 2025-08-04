@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVO Technologies - Personalizing the Web, One User at a Time</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>INVO</h2>
+                <span>Technologies</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Personalizing the Web,</span>
+                    <span class="typing-text">One User at a Time</span>
+                </h1>
+                <p class="hero-description">
+                    INVO Technologies creates intelligent, scalable, and user-centric digital solutions 
+                    that empower businesses and institutions across Nigeria and beyond.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>Custom Web Apps</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-cloud"></i>
+                        <span>SaaS Development</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Data Dashboards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="bg-gradient"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About INVO Technologies</h2>
+                <p class="section-subtitle">Forward-thinking software development startup dedicated to creating intelligent solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower people, businesses, and institutions with smart, adaptable tools that streamline operations, improve decision-making, and unlock growth.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>We believe that great technology should feel effortless, personalized, and impactful. Digital experiences should adapt to people, not the other way around.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Headquartered in Nigeria, we focus on solving real-world problems across diverse industries through modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <div class="feature-content">
+                            <h4>AI-Driven Personalization</h4>
+                            <p>Intelligent systems that adapt to user preferences and behaviors</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <div class="feature-content">
+                            <h4>Modular Dashboards</h4>
+                            <p>Customizable interfaces for different user types and needs</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <div class="feature-content">
+                            <h4>Inclusive UX Design</h4>
+                            <p>Accessible experiences for users across varying digital literacy levels</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored to your unique needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Custom Web Applications</h3>
+                    <p>Full-stack applications tailored to unique business requirements with modern technologies</p>
+                    <div class="service-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>SaaS Product Development</h3>
+                    <p>Scalable software-as-a-service solutions with cloud-ready architecture</p>
+                    <div class="service-tech">
+                        <span>Spring Boot</span>
+                        <span>Cloud Services</span>
+                        <span>APIs</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centric design that prioritizes accessibility and intuitive experiences</p>
+                    <div class="service-tech">
+                        <span>Figma</span>
+                        <span>Tailwind CSS</span>
+                        <span>Design Systems</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data-Driven Dashboards</h3>
+                    <p>Interactive analytics and reporting tools for informed decision-making</p>
+                    <div class="service-tech">
+                        <span>D3.js</span>
+                        <span>Analytics</span>
+                        <span>Real-time Data</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cloud-Ready APIs</h3>
+                    <p>Robust backend services and admin panels for seamless integration</p>
+                    <div class="service-tech">
+                        <span>REST APIs</span>
+                        <span>GraphQL</span>
+                        <span>Microservices</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Optimization</h3>
+                    <p>Responsive designs optimized for both web and mobile experiences</p>
+                    <div class="service-tech">
+                        <span>PWA</span>
+                        <span>Responsive</span>
+                        <span>Touch UI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects We've Delivered</h2>
+                <p class="section-subtitle">Real-world solutions that make a difference</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered</span>
+                        </div>
+                    </div>
+                    <h3>COOPR8</h3>
+                    <p>A powerful cooperative society management platform handling user registration, savings, loans, shares, and Paystack integration with role-based access.</p>
+                    <div class="project-features">
+                        <span>User Management</span>
+                        <span>Payment Integration</span>
+                        <span>Role-based Access</span>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Project</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered</span>
+                        </div>
+                    </div>
+                    <h3>School Management Software</h3>
+                    <p>End-to-end academic management system covering student enrollment, results, attendance, schedules, and fee tracking for web and mobile.</p>
+                    <div class="project-features">
+                        <span>Student Portal</span>
+                        <span>Teacher Dashboard</span>
+                        <span>Attendance Tracking</span>
+                        <span>Fee Management</span>
+                    </div>
+                    <div class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Project</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered</span>
+                        </div>
+                    </div>
+                    <h3>Marketing Automation Platform</h3>
+                    <p>Web-based system for managing leads, running drip email campaigns, and analyzing marketing performance for growing agencies.</p>
+                    <div class="project-features">
+                        <span>Lead Management</span>
+                        <span>Email Campaigns</span>
+                        <span>Analytics</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Project</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered</span>
+                        </div>
+                    </div>
+                    <h3>Ecommerce Platform</h3>
+                    <p>Scalable online store solution with inventory control, order management, customer tracking, and mobile-optimized frontend.</p>
+                    <div class="project-features">
+                        <span>Inventory Control</span>
+                        <span>Order Management</span>
+                        <span>Payment Gateway</span>
+                        <span>Analytics Tools</span>
+                    </div>
+                    <div class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Project</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to build what's next? Let's discuss your project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Visit Our Website</h3>
+                        <p>www.invo.com.ng</p>
+                        <a href="https://www.invo.com.ng" class="contact-link">
+                            <span>Visit Website</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>hello@invo.com.ng</p>
+                        <a href="mailto:hello@invo.com.ng" class="contact-link">
+                            <span>Send Email</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Nigeria</p>
+                        <div class="contact-link">
+                            <span>Headquarters</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>INVO Technologies</h3>
+                    <p>Personalizing the Web, One User at a Time</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Custom Web Apps</a></li>
+                            <li><a href="#services">SaaS Development</a></li>
+                            <li><a href="#services">UI/UX Design</a></li>
+                            <li><a href="#services">Data Dashboards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Projects</h4>
+                        <ul>
+                            <li><a href="#projects">COOPR8</a></li>
+                            <li><a href="#projects">School Management</a></li>
+                            <li><a href="#projects">Marketing Platform</a></li>
+                            <li><a href="#projects">Ecommerce Solution</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 INVO Technologies. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
