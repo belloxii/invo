@@ -108,11 +108,9 @@ class NavbarEffects {
     init() {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
-                this.navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                this.navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                this.navbar.classList.add('scrolled');
             } else {
-                this.navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                this.navbar.style.boxShadow = 'none';
+                this.navbar.classList.remove('scrolled');
             }
         });
     }
@@ -225,16 +223,30 @@ class FormHandler {
         }
     }
 
-    handleSubmit() {
+    async handleSubmit() {
         const submitBtn = this.form.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
+        const formData = new FormData(this.form);
 
         // Show loading state
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
         submitBtn.disabled = true;
 
-        // Simulate form submission
-        setTimeout(() => {
+        try {
+            // Prepare email data
+            const emailData = {
+                to: 'invotechng@gmail.com',
+                subject: `New Contact Form Submission from ${formData.get('name')}`,
+                name: formData.get('name'),
+                email: formData.get('email'),
+                company: formData.get('company') || 'Not specified',
+                message: formData.get('message')
+            };
+
+            // For demo purposes, we'll simulate email sending
+            // In production, this would connect to your email service
+            await this.simulateEmailSending(emailData);
+
             submitBtn.innerHTML = '<i class="fas fa-check"></i> <span>Message Sent!</span>';
             submitBtn.style.background = 'var(--gradient-accent)';
 
@@ -244,7 +256,57 @@ class FormHandler {
                 submitBtn.style.background = 'var(--gradient-primary)';
                 this.form.reset();
             }, 2000);
-        }, 1500);
+
+        } catch (error) {
+            submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <span>Error Sending</span>';
+            submitBtn.style.background = '#ef4444';
+
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.background = 'var(--gradient-primary)';
+            }, 2000);
+        }
+    }
+
+    async simulateEmailSending(emailData) {
+        // Simulate API call delay
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log('Email would be sent to:', emailData.to);
+                console.log('Email data:', emailData);
+                resolve();
+            }, 1500);
+        });
+    }
+}
+
+// Back to Top Button
+class BackToTop {
+    constructor() {
+        this.button = document.getElementById('backToTop');
+        this.init();
+    }
+
+    init() {
+        if (this.button) {
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    this.button.classList.add('visible');
+                } else {
+                    this.button.classList.remove('visible');
+                }
+            });
+
+            // Smooth scroll to top when clicked
+            this.button.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     }
 }
 
@@ -434,6 +496,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new TypingAnimation();
     new FloatingCards();
     new FormHandler();
+    new BackToTop();
     new MobileMenu();
     new ParallaxEffect();
     new RippleEffect();
